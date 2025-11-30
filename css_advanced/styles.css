@@ -1,0 +1,444 @@
+/* ------------------------------
+   GLOBAL RESET
+------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+   background-image: url(images/Object.png);
+   background-repeat: no-repeat;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* ------------------------------
+   HEADER / NAVIGATION
+------------------------------ */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px 120px;
+    z-index: 20;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+main section:first-of-type {
+    background: url("./images/hero-bg.jpg") center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+
+main section:first-of-type h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+main section:first-of-type span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+main section:first-of-type button {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: #C271FF;
+    color: white;
+    font-weight: 700;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+main section:first-of-type div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:first-of-type div:first-child .tag-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+main section:first-of-type div:first-child button {
+    margin-top: 25px;
+}
+
+
+main section:first-of-type button:hover {
+    background: #a950ff;
+}
+
+/* ------------------------------
+   "LEARN FROM PROS" SECTION
+------------------------------ */
+main section:first-of-type div:nth-child(2) {
+    margin-top: 100px;
+}
+
+main section:first-of-type h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 32px; /* or whatever the design uses */
+    font-weight: 300; /* or normal/light depending on your design */
+    color: #ffffff; /* default color */
+}
+
+.learn-colored {
+    color: #C271FF;          /* ONLY change color */
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    font-family: inherit !important;
+    line-height: inherit !important;
+    letter-spacing: inherit !important;
+}
+.mentors {
+    display: flex;
+    justify-content: center;  /* center all mentors horizontally */
+    align-items: flex-start;  /* align the tops of all mentor cards */
+    gap: 40px;                /* spacing between cards */
+    flex-wrap: nowrap;        /* force all in one line */
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;   /* stack image, h3, p */
+    align-items: center;      /* center content horizontally */
+    text-align: center;       
+    width: 200px;             /* same width for all cards */
+}
+/* Center only the h2, keep mentors flex intact */
+.mentors-section h2 {
+    text-align: center;     /* center heading text */
+    width: 100%;            /* full width so it doesn't shrink */
+    margin-bottom: 50px;    /* space between heading and mentors */
+}
+
+/* Keep mentors layout unchanged */
+.mentors {
+    display: flex;
+    justify-content: center; /* center mentors row */
+    align-items: flex-start; /* align top of all cards */
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+    display: flex;             /* side by side layout */
+    align-items: center;       /* vertically center content */
+    justify-content: center;   /* center horizontally if space remains */
+    gap: 40px;                 /* spacing between image and blockquote */
+    background-color: #C271FF; /* background color */
+    padding: 80px 20px;        /* vertical & horizontal padding */
+    width: 100%;               /* full width of parent */
+    box-sizing: border-box;
+}
+
+/* Image container */
+.testimonial-section > div:first-child {
+    flex: 0 0 150px;          /* fixed width for image div */
+}
+
+/* Image itself */
+.testimonial-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Blockquotes cont*
+
+   POPULAR TUTORIALS
+
+ 
+
+/* Container of all 4 tutorial cards */
+.most-tutorial {
+    padding: 90px 120px;
+    color: #fff;
+}
+
+.most-tutorial h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #071629;
+}
+
+/* FLEX ROW FOR ALL CARDS */
+.most-tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Card Wrapper */
+.most-tutorial .tutoria-mentor-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* INDIVIDUAL CARD */
+.tutoria-mentor {
+    width: 23%;                /* 4 in one row */
+  
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tutorial Image */
+.tutoria-mentor > img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Title */
+.tutoria-mentor h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #071629;
+}
+
+/* Description */
+.tutoria-mentor p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #071629;
+    opacity: 0.3;
+}
+
+/* AUTHOR ROW: IMAGE + NAME INLINE */
+.tutoria-mentor .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tutoria-mentor .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.tutoria-mentor .author img + h4 {
+
+    color: #C271FF;
+    opacity: 0.8;
+
+}
+
+/* STARS ROW INLINE */
+.tutoria-mentor .stars {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.tutoria-mentor .stars i {
+    color: #C271FF;
+    font-size: 16px;
+}
+
+/* Time text */
+.tutoria-mentor > p:last-child {
+    font-weight: bold;
+}
+/* ------------------------------
+ /* ------------------------------
+   FREE MEMBERSHIP
+------------------------------ */
+.free-membership {
+    background: #071629;
+    padding: 100px 120px;
+    text-align: center;
+}
+
+.free-membership h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #C271FF;
+}
+
+/* NEW FIX */
+.free-membership-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.free-membership-container .item {
+    width: 23%;
+    color: white;
+}
+
+.free-membership-container img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+/* CENTERED BUTTON STYLE */
+.free-btn {
+    padding: 15px 40px;
+    background: #C271FF;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 75px;
+    width:250px;
+    height: 44px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight:600;
+}
+
+.free-btn:hover {
+    background: #a950ff;
+}
+
+/* ------------------------------
+  /* ------------------------------
+   FAQ SECTION
+------------------------------ */
+
+/* FAQ SECTION */
+.faq {
+    padding: 100px 140px;
+    text-align: center;
+}
+.faq, .faq *{
+    color: #071629 !important;
+}
+
+/* H2 */
+.faq h2 {
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 60px !important;
+    color: #071629;
+    margin-bottom: 50px;
+}
+
+/* Two column layout */
+.faq > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Column widths */
+.faq > div > div {
+    width: 45%;
+}
+
+/* H3 */
+.faq h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #071629;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Paragraph div right under each h3 */
+.faq h3 + div {
+    color: #071629 !important;          /* ← FULLY VISIBLE NOW */
+    opacity: 0.6;            /* Instead of #07162980 (sometimes ignored) */
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 30px;
+    opacity: 0.05;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph / div under h3 */
+.faq h3 + div {
+    color: #07162980; /* 50% opacity */
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+    background: #071629;
+    padding: 80px 120px;
+    color: white;
+}
+
+footer section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer p {
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 14px;
+}
