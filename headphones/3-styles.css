@@ -25,12 +25,15 @@
 body {
     font-family: var(--font-main);
    background-image: url(images/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .container {
     width: 90%;
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 25px auto;
+    justify-content: center;
 }
 
 
@@ -251,4 +254,127 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+/* -------------------------------
+   OUR RESULTS SECTION
+--------------------------------- */
+.our-results {
+    padding: 80px 0;
+    text-align: center;
+    background-image: url(images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+}
+.our-results-container{
+    max-width: 550px;
+     margin:40px 25% 20px 25%;
+}
+.dots{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.dot{
+    max-width: 200px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .results-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* -------------------------------
+   CONTACT US SECTION
+--------------------------------- */
+.contact-us {
+    padding: 80px 0;
+    text-align: center;
+    color: #071629;
+    background-color: #ffffff;
+
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-us .intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff6565;
+    box-shadow: 0 0 5px rgba(255, 101, 101, 0.5);
+}
+
+.contact-form button.btn {
+    align-self: center;
+    background: #ff6565;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
 

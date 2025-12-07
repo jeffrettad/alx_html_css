@@ -25,12 +25,15 @@
 body {
     font-family: var(--font-main);
    background-image: url(images/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .container {
     width: 90%;
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 25px auto;
+    justify-content: center;
 }
 
 
@@ -252,3 +255,31 @@ body {
     }
 }
 
+
+/* -------------------------------
+   OUR RESULTS SECTION
+--------------------------------- */
+
+.our-results-container{
+    max-width: 550px;
+     margin:40px 25% 20px 25%;
+}
+.dots{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.dot{
+    max-width: 200px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+   .our-results-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    
+    }
+}
