@@ -262,24 +262,52 @@ body {
 .our-results {
     padding: 80px 0;
     text-align: center;
+
+    /* Background */
     background-image: url(images/headphones_hero_2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
- 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
-.our-results-container{
-    max-width: 550px;
-     margin:40px 25% 20px 25%;
-}
-.dots{
 
+.our-results .intro {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Dots container */
+.dots {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
-.dot{
-    max-width: 200px;
+
+/* Each dot box */
+.dot {
+    width: 180px;
+    text-align: center;
+}
+/* Dot images always stay equal */
+.dot img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive | Stack dots on small screens */
+@media (max-width: 768px) {
+    .dots {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .dot {
+        width: 220px;
+    }
 }
 
 

@@ -159,6 +159,8 @@ body {
     padding: 80px 0;
     text-align: center;
     background: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #071629;
 }
 
@@ -259,36 +261,62 @@ body {
 /* -------------------------------
    OUR RESULTS SECTION
 --------------------------------- */
+
+
 .our-results {
     padding: 80px 0;
     text-align: center;
     background-image: url(images/headphones_hero_2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
- 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
-.our-results-container{
-    max-width: 550px;
-     margin:40px 25% 20px 25%;
-}
-.dots{
 
+.our-results-container {
+    max-width: 700px;
+    margin: 80px auto 50px;
+}
+
+.results-row {
     display: flex;
     justify-content: space-around;
-
-}
-.dot{
-    max-width: 200px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.pent {
+    width: min(220px, 40vmin);
+    aspect-ratio: 1 / 1;
+    background: #ff6565;
+    clip-path: polygon(
+      50% 4%,   /* top */
+      95% 35%,  /* top-right */
+      78% 90%,  /* bottom-right */
+      22% 90%,  /* bottom-left */
+      5% 35%    /* top-left */
+    );
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: 700;
+    font-family: system-ui, sans-serif;
+    box-shadow: 0 8px 20px rgba(34,50,80,0.12);
+    transition: transform .28s ease;
+  }
 
-/* Responsive */
+
+ .wrap .pent{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .results-row {
-        grid-template-columns: 1fr;
-        gap: 30px;
         flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 }
 
